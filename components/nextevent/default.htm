@@ -1,0 +1,13 @@
+<h3>Next <span class="camelcase">{{ category.singular }}</span></h3>
+
+{% if nextEvent.getNextEvent %}
+    <h4>{{ nextEvent.getNextEvent.title }}</h4>
+
+    <p><strong>{{ nextEvent.getNextEvent.location }}</strong></p>
+    <p>{{ nextEvent.getNextEvent.startDate|date('jS') }} - {{ nextEvent.getNextEvent.endDate|date('jS F Y') }}</p>
+    <p>Price: £{{ nextEvent.getNextEvent.price }}</p>
+
+    <a href="#" class="btn btn-primary">Enquire</a>
+{% else %}
+    <p>No upcoming events</p>
+{% endif %}

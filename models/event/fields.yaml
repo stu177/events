@@ -1,0 +1,46 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Event Name
+        required: true
+        span: left
+    price:
+        label: Price
+        span: right
+        type: number
+    location:
+        label: Location
+        span: left
+    category:
+        label: Event Category
+        span: right
+        type: relation
+        nameFrom: title
+    startDate:
+        label: Start Date
+        required: true
+        span: left
+        type: Backend\FormWidgets\DatePicker
+        mode: date
+    endDate:
+        label: End Date
+        span: right
+        type: Backend\FormWidgets\DatePicker
+        mode: date
+    startTime:
+        label: Start Time
+        span: left
+        type: Backend\FormWidgets\DatePicker
+        mode: time
+    endTime:
+        label: End Time
+        span: right
+        type: Backend\FormWidgets\DatePicker
+        mode: time
+    description:
+        label: Description
+        span: full
+        type: Backend\FormWidgets\RichEditor

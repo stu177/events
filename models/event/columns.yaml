@@ -1,0 +1,17 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Name
+        searchable: true
+    category:
+        label: Category
+        searchable: true
+        relation: category
+        select: title
+    startDate:
+        label: Start Date
+    updated_at:
+        label: Last modified

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/stu177/events/models/category/fields.yaml
+
+# Model Class name
+modelClass: Stu177\Events\Models\Category
+
+# Default redirect location
+defaultRedirect: stu177/events/categories
+
+# Create page
+create:
+    title: Create Category
+    redirect: stu177/events/categories/update/:id
+    redirectClose: stu177/events/categories
+
+# Update page
+update:
+    title: Edit Category
+    redirect: stu177/events/categories
+    redirectClose: stu177/events/categories
+
+# Preview page
+preview:
+    title: Preview Category

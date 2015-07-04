@@ -1,0 +1,10 @@
+<h3>{{ showCategory.getCategory.title }}</h3>
+<p>{{ showCategory.getCategory.description }}</p>
+
+<h4>Upcoming events:</h4>
+
+{% for event in showCategory.getEvents %}
+
+	{{ event.title }}
+
+{% endfor %}

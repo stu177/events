@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Category Name
+        span: left
+        required: true
+    description:
+        label: Description
+        span: right
+        type: textarea
+    singular:
+        label: Singular
+        span: left
+        required: true
